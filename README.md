@@ -54,7 +54,7 @@ ffmpeg -y -i GOPR0001.MP4 -codec copy -map 0:m:handler_name:"	GoPro MET" -f rawv
 
 Note the gap before GoPro MET should be a TAB, not a space. Also, the handler_name and position changes between camera models and frame rates. There should be a way to target always the right stream.
 
-2. `gopro2json -i GOPR0001.bin -o GOPR0001.json`
+2. `gopro2json -i GOPR0001.bin -o GOPR0001.json` or `gpmdinfo -i GOPR0001.bin`
 
 3. There is no step 3
 
@@ -110,22 +110,23 @@ Data starts with a label that describes the data following it. Values are all bi
 
 Labels include:
 
-- `ACCL` - accelerometer reading x/y/z
-- `DEVC` - device
-- `DVID` - device ID, possibly hard-coded to 0x1
-- `DVNM` - devicde name, string "Camera"
-- `EMPT` - empty packet
-- `GPS5` - GPS data (lat, lon, alt, speed, 3d speed)
-- `GPSF` - GPS fix (none, 2d, 3d)
-- `GPSP` - GPS positional accuracy in cm
-- `GPSU` - GPS acquired timestamp; potentially different than "camera time"
-- `GYRO` - gryroscope reading x/y/z
-- `SCAL` - scale factor, a multiplier for subsequent data
-- `SIUN` - SI units; strings (m/s², rad/s)
-- `STRM` - ¯\\\_(ツ)\_/¯
-- `TMPC` - temperature
-- `TSMP` - total number of samples
-- `UNIT` - alternative units; strings (deg, m, m/s)
+ * `ACCL` - accelerometer reading x/y/z
+ * `DEVC` - device 
+ * `DVID` - device ID, possibly hard-coded to 0x1
+ * `DVNM` - device name, string "Camera"
+ * `EMPT` - empty packet
+ * `GPS5` - GPS data (lat, lon, alt, speed, 3d speed)
+ * `GPSF` - GPS fix (none, 2d, 3d)
+ * `GPSP` - GPS positional accuracy in cm
+ * `GPSU` - GPS acquired timestamp; potentially different than "camera time"
+ * `GYRO` - gryroscope reading x/y/z
+ * `SCAL` - scale factor, a multiplier for subsequent data
+ * `SIUN` - SI units; strings (m/s², rad/s)
+ * `STRM` - ¯\\\_(ツ)\_/¯
+ * `TMPC` - temperature
+ * `TSMP` - total number of samples
+ * `UNIT` - alternative units; strings (deg, m, m/s)
+ * `HMMT` - HiLight Tags (if there are any)
 
 Types include:
 
