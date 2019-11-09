@@ -6,10 +6,10 @@ import (
 	"io"
 	"os"
 	"strconv"
-    "log"
+	"log"
 	"math"
 	"strings"
-	"github.com/stilldavid/gopro-utils/telemetry"
+	"github.com/osirisinferi/gopro-utils/telemetry"
 )
 
 func main() {

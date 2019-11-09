@@ -10,7 +10,7 @@ import (
 	"os"
 
 	geojson "github.com/paulmach/go.geojson"
-	"github.com/JuanIrache/gopro-utils/telemetry"
+	"github.com/osirisinferi/gopro-utils/telemetry"
 )
 
 func main() {

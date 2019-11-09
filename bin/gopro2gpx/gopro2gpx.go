@@ -11,7 +11,7 @@ import (
 	"time"
 	"strconv"
 
-	"github.com/JuanIrache/gopro-utils/telemetry"
+	"github.com/osirisinferi/gopro-utils/telemetry"
 	"github.com/mlouielu/gpxgo/gpx"
 )
 

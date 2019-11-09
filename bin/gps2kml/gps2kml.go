@@ -5,7 +5,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/JuanIrache/gopro-utils/telemetry"//getting rid of some bugs
+	"github.com/osirisinferi/gopro-utils/telemetry"
 	"io"
 	"os"
 	"time"
